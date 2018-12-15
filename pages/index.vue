@@ -3,7 +3,7 @@
     <div>
       <app-logo/>
       <h1 class="title">
-        my-first-nuxt-app
+        HELLO, WORLD
       </h1>
       <h2 class="subtitle">
         Nuxt.js project
@@ -62,4 +62,3 @@ export default {
   padding-top: 15px;
 }
 </style>
-
