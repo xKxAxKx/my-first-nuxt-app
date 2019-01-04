@@ -1,0 +1,21 @@
+<template>
+  <div>
+    <h2>ログインページ</h2>
+    <p>
+      <button type="button" @click="login">ログイン</button>
+    </p>
+  </div>
+</template>
+
+<script>
+import Cookies from 'universal-cookie'
+export default {
+  methods: {
+    login() {
+      const cookies = new Cookies()
+      cookies.set('credential', 'true', { maxAge: 90 })
+      this.$route.push('/')
+    }
+  }
+}
+</script>

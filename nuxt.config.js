@@ -17,6 +17,11 @@ module.exports = {
   /*
   ** Customize the progress bar color
   */
+  router: {
+    middleware: [
+      'auth'
+    ]
+  },
   loading: { color: '#3B8070' },
   modules: [
     '@nuxtjs/axios'
